@@ -1,0 +1,43 @@
+body {
+  font-family: "Hack Nerd Font", "Open Sans", Helvetica;
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+/* Banner */
+header {
+  background: url("./assets/pattern.jpeg");
+  font-weight: bold;
+  color: #f1fa8c;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+/* Sections */
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #ffb86c;
+}
+
+#brushes h2 {
+  background-color: #50fa7b;
+}
+
+#frames h2 {
+  background-color: #ff79c6;
+}
+
+#paint h2 {
+  background-color: #8be9fd;
+}
+
+strong {
+  color: #bd93f9;
+}
