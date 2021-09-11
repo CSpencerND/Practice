@@ -1,41 +1,82 @@
-* {
-  border: 1px solid red;
-}
+/* * { */
+  /* border: 1px solid red; */
+/* } */
 
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: .9;
+  opacity: 0.9;
   text-align: center;
 }
 
-/* Header */
+/* HEADER */
 header {
-  margin: 0 10px;
   height: 69px;
+  border-bottom: 1px solid seashell;
 }
 
 nav {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
+  height: 59px;
 }
 
-.logo {
-
-}
-
-.logo img {
+nav div {
   height: 50px;
-  width: auto;
 }
 
-ul {
-
+nav div img {
+  height: 50px;
 }
 
-li {
+nav ul li {
   display: inline;
   text-decoration: underline;
 }
+
+/* MAIN */
+/* main { */
+  /* width: 80%; */
+  /* margin-left: 6%; */
+  /* margin-right: 6%; */
+/* } */
+
+/* MISSION */
+#mission {
+  background-image: url("assets/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+}
+
+#statement {
+  background-color: black;
+}
+
+/* SHOWCASE */
+#teas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tea {
+  
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+}
+
+/* LOCATIONS */
+#locations {
+  background-image: url("assets/img-locations-background.jpg");
+}
+
+/* FOOTER */
+
+
+
+
