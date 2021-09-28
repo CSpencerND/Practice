@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* GLOBALS */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f8fbf2; /* #fbf1c7 */
+  color: slategray;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 64px;
+}
+
+#logo img {
+  max-height: 32px;
+  padding-left: 24px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+nav h1 {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+ul {
+  padding-right: 24px;
+}
+
+li {
+  display: inline;
+  margin: 0 8px;
+}
+
+/* Learn Something New */
+#learn {
+  display: flex;
+}
+
+#learn img {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+#learn div {
+  margin: auto 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: min-content;
+  flex-basis: min-content;
+  margin-right: 128px;
+}
+
+#learn h1 {
+  width: 250px;
+}
+
+#learn p {
+  margin-bottom: 24px;
+}
+
+.btn {
+  background-color: darkslategray;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#learn a {
+  color: lightgray;
+}
+
+/* Links */
+#links {
+  display: flex;
+}
+
+#practice {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+#practice img {
+  width: 100%;
+}
+
+#practice h1 {
+  margin: 32px 0 24px;
+}
+
+#practice p {
+  margin: 24px 0;
+}
+
+#sig {
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.boxes {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-left: 1px solid lightgray;
+}
+
+.recbox {
+  display: flex;
+  border-bottom: 4px solid lightgray;
+}
+
+.recbox img {
+  padding: 16px;
+  width: 35%;
+}
+
+.info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info h3 {
+  margin: 0;
+}
+
+.info a {
+  color: skyblue;
+}
+
+/* Showcase */
+#showcase {
+  padding: 0 72px 32px;
+}
+
+#showcase h1 {
+  padding: 32px 0 0 ;
+  text-align: center;
+  margin-top: 0;
+}
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  display: flex;
+  margin: 16px;
+  background-color: #f8fbf2;
+  max-width: 30%;
+  flex-direction: column;
+  padding-bottom: 20px;;
+}
+
+.course p {
+  margin: 0;
+  padding: 4px 16px;
+}
+
+.course h3 {
+  margin: 0;
+  padding: 16px 16px 12px;
+}
+
+/* Thesis */
+#exhibit {
+  border-bottom: 1px solid lightgray;
+}
+#exhibit h1 {
+  margin: 0;
+  padding: 32px;
+  text-align: center;
+}
+
+#thesis {
+  display: flex;
+}
+
+#urban {
+  width: 60%;
+  padding: 0 24px 24px;
+}
+
+video {
+  width: 100%;
+}
+
+#exhibit .boxes {
+  border: none;
+  padding-top: 0;
+}
+
+#exhibit .recbox {
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+footer p {
+  padding: 16px 24px 48px;
+  margin: 0;
+}
+
+footer a {
+  color: lightslategray;
+}
+
+footer div {
+  padding-right: 20px;
+}
+footer div p {
+  display: inline-block;
+  padding: 16px 4px;
+}
