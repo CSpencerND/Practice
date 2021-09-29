@@ -7,6 +7,14 @@ body {
   color: slategray;
 }
 
+.mobile {
+  display: none;
+}
+
+.small {
+  display: none;
+}
+
 .container {
   max-width: 80%;
   margin: auto;
@@ -177,7 +185,7 @@ li {
   display: flex;
   margin: 16px;
   background-color: #f8fbf2;
-  max-width: 30%;
+  max-width: 29%;
   flex-direction: column;
   padding-bottom: 20px;;
 }
@@ -216,14 +224,15 @@ video {
 }
 
 #exhibit .boxes {
-  border: none;
+  border-left: 1px solid lightgray;
   padding-top: 0;
 }
 
 #exhibit .recbox {
-  border: none;
+  border-bottom: 1px solid lightgray;
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -246,3 +255,186 @@ footer div p {
   display: inline-block;
   padding: 16px 4px;
 }
+
+
+/* MOBILE */
+@media(max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .course {
+    margin: 12px;
+    max-width: 29%;
+  }
+
+  #showcase {
+    padding: 0;
+    padding-bottom: 32px;
+  }
+}
+
+
+@media(max-width: 710px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: contents;
+  }
+
+  nav .mobile {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #learn {
+    display: block;
+    max-height: 736px;
+  }
+
+  #learn img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #learn div {
+    margin: auto;
+    padding: 32px 16px;
+    width: max-content;
+  }
+
+  #learn h1 {
+    margin: 0;
+    padding-bottom: 32px;
+    width: auto;
+  }
+
+  #learn p {
+    margin: 0;
+    padding: 0;
+  }
+
+  #learn .btn {
+    margin-top: 24px;
+    padding: 8px;
+  }
+
+  #links {
+    margin: 16px 16px 32px;
+  }
+
+  #links .gray {
+    background-color: #f8fbf2;
+    border-bottom: none;
+  }
+
+  #links .gray img {
+    padding-bottom: 0;
+  }
+
+  .boxes {
+    width: 100%;
+    border: none;
+    padding: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #showcase {
+    background-color: #f8fbf2;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 0;
+  }
+
+  #showcase .desktop {
+    display: none;
+  }
+
+  #showcase h1 {
+    margin-bottom: 24px;
+  }
+
+  #showcase .mobile {
+    margin: 0 16px 32px;
+  }
+
+  #showcase .mobile h3 {
+    background-color: lightgray;
+    padding: 16px;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  #exhibit .desktop {
+    display: none;
+  }
+
+  footer p {
+    padding: 16px;
+    margin-top: 24px;
+  }
+}
+
+
+@media(max-width: 500px) {
+  #learn div {
+    width: auto;
+    text-align: center;
+  }
+
+  #learn .btn {
+    width: 90%;
+  }
+
+  #links .mobile {
+    display: none;
+  }
+
+  #links *{
+    width: 100%;
+  }
+
+  #links .boxes {
+    padding: 0;
+  }
+
+  #links .boxes .recbox {
+    border: none;
+    justify-content: center;
+  }
+
+  #links .small {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  #links h3 {
+    margin: 24px 16px 0;
+  }
+
+  #links p {
+    margin: 8px 16px;
+  }
+
+  #links a {
+    margin: 0 16px 24px;
+  }
+  
+}
+
+
+
+
