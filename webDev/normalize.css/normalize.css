@@ -9,8 +9,10 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
+  line-height: 1.5; /* 1 */
+  letter-spacing: 1.2;
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 18px;
 }
 
 /* Sections
