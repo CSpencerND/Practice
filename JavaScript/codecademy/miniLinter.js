@@ -60,14 +60,28 @@ const countOccurences = (word) => {
     return result;
 }
 // Get occurences of every word
-const allOccurences = betterWords.map(word => countOccurences(word));
+let allOccurences = betterWords.map(word => countOccurences(word));
+allOccurences = Object.assign({}, ...allOccurences);
 
-const highestOccurence = allOccurences.reduce(function(prev, current) {
-    return (prev.y > current.y) ? prev : current
-}) //returns object
+const highestOccurence = Object.entries(allOccurences).reduce((prev, current) => {
+    return (prev[1] > current[1]) ? prev : current
+})
 
 
-// console.log(storyWords.length);
-// console.log(countSentences)
-// console.log(overusedCount);
-// console.log(betterWords.join(" "), "\n");
+// Find and replace a word of choice
+const findAndReplace = (find, replace) => {
+    betterWords.map(word => {
+        let i = betterWords.indexOf(find);
+        if (word === find) {
+            betterWords.splice(i, 1, replace);
+        }
+    });
+}
+
+
+// findAndReplace("beautiful", "terrifying");
+console.log(overusedCount);
+console.log(betterWords.join(" "), "\n");
+console.log(`${storyWords.length} words`);
+console.log(`${countSentences} sentences`)
+console.log(`The word "${highestOccurence[0]}" has appeared ${highestOccurence[1]} times`)
