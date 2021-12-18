@@ -1,22 +1,19 @@
 const _ = {
 
-    clamp(number, lower, upper)
-    {
+    // number methods
+    clamp(number, lower, upper) {
         const lowerClampedValue = Math.max(number, lower);
         const clampedValue = Math.min(lowerClampedValue, upper);
         return clampedValue;
     },
 
-    inRange(number, start, end=undefined)
-    {
-        if (end === undefined)
-        {
+    inRange(number, start, end = undefined) {
+        if (end === undefined) {
             end = start;
             start = 0;
         }
 
-        if (start > end)
-        {
+        if (start > end) {
             let temp = start;
             start = end; end = temp; delete temp;
         }
@@ -25,15 +22,13 @@ const _ = {
         return isInRange;
     },
 
-    words(string)
-    {
+    // string methods
+    words(string) {
         return string.split(' ');
     },
 
-    pad(string='', length=0, chars=' ')
-    {
-        if (length <= string.length)
-        {
+    pad(string = '', length = 0, chars = ' ') {
+        if (length <= string.length) {
             return string;
         }
 
@@ -46,12 +41,31 @@ const _ = {
         return paddedString;
     },
 
-    has(object, key)
-    {
+    // object methods
+    has(object, key) {
         hasValue = object[key] !== undefined;
         return hasValue;
     },
 
+
+    invert(object) {
+        const invertedObject = {};
+
+        for (let key in object) {
+            const orijValue = object[key];
+            invertedObject[orijValue] = key;
+        }
+
+        return invertedObject;
+    },
+
+    findKey(object, predicate) {
+        for (let key in object) {
+            if (predicate(object[key])) {
+                return key;
+            }
+        }
+    },
 
 };
 
