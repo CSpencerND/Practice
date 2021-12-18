@@ -44,7 +44,15 @@ const _ = {
 
         const paddedString = padStart + string + padEnd;
         return paddedString;
-    }
+    },
+
+    has(object, key)
+    {
+        hasValue = object[key] !== undefined;
+        return hasValue;
+    },
+
+
 };
 
 
