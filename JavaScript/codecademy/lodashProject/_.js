@@ -15,7 +15,7 @@ const _ = {
 
         if (start > end) {
             let temp = start;
-            start = end; end = temp; delete temp;
+            start = end; end = temp;
         }
 
         const isInRange = (number >= start && number < end);
@@ -77,6 +77,15 @@ const _ = {
             return !predicate(element, index, array);
         });
         return this.drop(array, dropNumber);
+    },
+
+    chunk(array, size = 1) {
+        let chunkArray = [];
+        for (let i = 0; i < array.length; i += size) {
+            let arrayChunk = array.slice(i, i + size );
+            chunkArray.push(arrayChunk);
+        }
+        return chunkArray;
     }
 };
 
