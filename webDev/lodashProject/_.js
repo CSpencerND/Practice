@@ -67,6 +67,17 @@ const _ = {
         }
     },
 
+    // array methods
+    drop(array, n = 1) {
+        return array.slice(n)
+    },
+
+    dropWhile(array, predicate) {
+        let dropNumber = array.findIndex((element, index) => {
+            return !predicate(element, index, array);
+        });
+        return this.drop(array, dropNumber);
+    }
 };
 
 
