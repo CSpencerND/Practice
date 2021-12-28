@@ -3,6 +3,23 @@ body {
   margin: 0px;
 }
 
+.header {
+    background-color: #00ffff;
+    text-align: center;
+}
+
+.title-row {
+    margin: 42px auto 21px auto;
+    text-align: center;
+}
+
+.instructions-title {
+    display: inline;
+    font-size: 18px;
+    color: #00ffff;
+    font-family: "Work Sans"
+}
+
 .door-frame {
   cursor: pointer;
   padding: 10px;
