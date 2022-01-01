@@ -20,7 +20,7 @@ body {
   font-family: 'Work Sans';
 }
 
-.instruction-row {
+.instructions-row {
   margin: 0 auto;
   width: 400px;
 }
@@ -49,13 +49,17 @@ body {
 }
 
 .start-row {
-    margin: auto;
+    margin: auto auto 18px auto;
     width: 120px;
     height: 43px;
     font-family: "Work Sans";
     background-color: #eb6536;
-    padding-top: 18px;
+    padding: 18px;
     font-size: 18px;
     text-align: center;
     color: #010165;
+}
+
+.start-row {
+  cursor: pointer;
 }
