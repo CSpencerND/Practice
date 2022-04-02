@@ -1,21 +1,17 @@
-// GLOBALS
+// Access HTML elements
 const doorImage1 = document.getElementById('door1')
 const doorImage2 = document.getElementById('door2')
 const doorImage3 = document.getElementById('door3')
 const startButton = document.getElementById('start')
 
-const botDoorPath =
+let botDoorPath =
     'https://content.codecademy.com/projects/chore-door/images/robot.svg'
-
-const beachDoorPath =
+let beachDoorPath =
     'https://content.codecademy.com/projects/chore-door/images/beach.svg'
-
-const spaceDoorPath =
+let spaceDoorPath =
     'https://content.codecademy.com/projects/chore-door/images/space.svg'
-
-const closedDoorPath =
+let closedDoorPath =
     'https://content.codecademy.com/projects/chore-door/images/closed_door.svg'
-
 
 let numClosedDoors = 3
 let openDoor1
@@ -23,12 +19,12 @@ let openDoor2
 let openDoor3
 let currentlyPlaying = true
 
-// FUNCTIONS
+// Define game logic to check doors, progress game, end game, and choose a random chore door
 const isClicked = (door) => {
     if (door.src === closedDoorPath) {
-        return false
+        return true
     }
-    return true
+    return false
 }
 
 const isBot = (door) => {
@@ -74,32 +70,33 @@ const randomChoorDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
-    if (!isClicked(doorImage1) && currentlyPlaying) {
+    if (currentlyPlaying && isClicked(doorImage1)) {
         doorImage1.src = openDoor1
         playDoor(doorImage1)
     }
 }
 
 doorImage2.onclick = () => {
-    if (!isClicked(doorImage2) && currentlyPlaying) {
+    if (currentlyPlaying && isClicked(doorImage2)) {
         doorImage2.src = openDoor2
         playDoor(doorImage2)
     }
 }
 
 doorImage3.onclick = () => {
-    if (!isClicked(doorImage3) && currentlyPlaying) {
+    if (currentlyPlaying && isClicked(doorImage3)) {
         doorImage3.src = openDoor3
         playDoor(doorImage3)
     }
 }
 
 startButton.onclick = () => {
-    if (!currentlyPlaying) {
+    if (currentlyPlaying === false) {
         startRound()
     }
 }
 
+// Start a game round
 const startRound = () => {
     doorImage1.src = closedDoorPath
     doorImage2.src = closedDoorPath
@@ -107,10 +104,8 @@ const startRound = () => {
 
     numClosedDoors = 3
     currentlyPlaying = true
-    startButton.innerHTML = 'Good luck'
+    startButton.innerHTML = 'Good Luck!'
 
     randomChoorDoorGenerator()
 }
-
-// MAIN
 startRound()
