@@ -1,0 +1,76 @@
+$dark-0: hsla(231, 10%, 13%, 1);
+$dark-1: hsla(231, 10%, 17%, 1);
+$dark-2: hsla(231, 10%, 22%, 1);
+$grey-0: hsla(231, 10%, 30%, 1);
+$grey-1: hsla(231, 10%, 45%, 1);
+$grey-2: hsla(231, 10%, 60%, 1);
+$light-0: hsla(231, 10%, 77%, 1);
+$light-1: hsla(231, 10%, 84%, 1);
+$light-2: hsla(231, 10%, 91%, 1);
+$rose: hsla(343, 76%, 68%, 1);
+$magenta-0: hsla(326, 100%, 74%, 1);
+$magenta-1: hsla(315, 88%, 77%, 1);
+$purple-0: hsla(265, 89%, 78%, 1);
+$purple-1: hsla(267, 57%, 78%, 1);
+$blue-0: hsla(216, 94%, 70%, 1);
+$blue-1: hsla(206, 100%, 79%, 1);
+$cyan-0: hsla(182, 78%, 66%, 1);
+$cyan-1: hsla(169, 97%, 77%, 1);
+$green-0: hsla(135, 94%, 65%, 1);
+$green-1: hsla(128, 92%, 75%, 1);
+$yellow-0: hsla(45, 100%, 70%, 1);
+$yellow-1: hsla(54, 88%, 84% ,1);
+$orange-0: hsla(27, 72%, 65%, 1);
+$orange-1: hsla(24, 87%, 78%, 1);
+$red-0: hsla(0, 100%, 67%, 1);
+$red-1: hsla(0, 79%, 75%, 1);
+$pdf: hsla(0, 66%, 26%, 1);
+
+$colors: (
+    "dark0": $dark-0,
+    "dark1": $dark-1,
+    "dark2": $dark-2,
+    "grey0": $grey-0,
+    "grey1": $grey-1,
+    "grey2": $grey-2,
+    "light0": $light-0,
+    "light1": $light-1,
+    "light2": $light-2,
+    "rose": $rose,
+    "magenta0": $magenta-0,
+    "magenta1": $magenta-1,
+    "purple0": $purple-0,
+    "purple1": $purple-1,
+    "blue0": $blue-0,
+    "blue1": $blue-1,
+    "cyan0": $cyan-0,
+    "cyan1": $cyan-1,
+    "green0": $green-0,
+    "green1": $green-1,
+    "yellow0": $yellow-0,
+    "yellow1": $yellow-1,
+    "orange0": $orange-0,
+    "orange1": $orange-1,
+    "red0": $red-0,
+    "red1": $red-1,
+    "pdf": $pdf,
+);
+
+@each $k, $v in $colors {
+    .bg-#{$k} {
+        background-color: $v;
+    }
+    .fg-#{$k} {
+        color: $v;
+    }
+    .hover-fg-#{$k} {
+        &:hover {
+            color: $v;
+        }
+    }
+    .hover-bg-#{$k} {
+        &:hover {
+            background-color: $v;
+        }
+    }
+}

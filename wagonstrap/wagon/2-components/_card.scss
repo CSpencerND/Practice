@@ -1,0 +1,18 @@
+@use "../0-base" as *;
+@use "../1-abstracts/variables" as *;
+
+.card {
+    display: block;
+    padding: $base-padding;
+    box-shadow: $base-box-shadow;
+
+    .card-title {
+        font-size: $base-font-size;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: $base-font-size;
+    }
+}

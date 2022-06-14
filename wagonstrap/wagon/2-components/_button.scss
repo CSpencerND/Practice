@@ -1,0 +1,9 @@
+@use "../0-base" as *;
+@use "../1-abstracts/variables" as *;
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: $base-padding $base-padding * 2;
+}

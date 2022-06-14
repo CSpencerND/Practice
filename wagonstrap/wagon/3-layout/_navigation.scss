@@ -1,0 +1,16 @@
+@use "../1-abstracts/variables" as *;
+@use "../1-abstracts/placeholders" as *;
+
+.navbar {
+    @extend %flex-layout;
+    padding-block: $base-padding;
+    box-shadow: $base-box-shadow;
+
+    .container {
+        @extend %flex-layout;
+    }
+
+    .logo {
+        font-size: $fs-lg;
+    }
+}

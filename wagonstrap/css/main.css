@@ -1,0 +1,1496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 4rem;
+}
+
+.p-4 {
+  padding: 6rem;
+}
+
+.p-5 {
+  padding: 8rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 4rem;
+}
+
+.pt-4 {
+  padding-top: 6rem;
+}
+
+.pt-5 {
+  padding-top: 8rem;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pr-3 {
+  padding-right: 4rem;
+}
+
+.pr-4 {
+  padding-right: 6rem;
+}
+
+.pr-5 {
+  padding-right: 8rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 6rem;
+}
+
+.pb-5 {
+  padding-bottom: 8rem;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 4rem;
+}
+
+.pl-4 {
+  padding-left: 6rem;
+}
+
+.pl-5 {
+  padding-left: 8rem;
+}
+
+.px-0 {
+  padding-inline: 0;
+}
+
+.px-1 {
+  padding-inline: 1rem;
+}
+
+.px-2 {
+  padding-inline: 2rem;
+}
+
+.px-3 {
+  padding-inline: 4rem;
+}
+
+.px-4 {
+  padding-inline: 6rem;
+}
+
+.px-5 {
+  padding-inline: 8rem;
+}
+
+.py-0 {
+  padding-block: 0;
+}
+
+.py-1 {
+  padding-block: 1rem;
+}
+
+.py-2 {
+  padding-block: 2rem;
+}
+
+.py-3 {
+  padding-block: 4rem;
+}
+
+.py-4 {
+  padding-block: 6rem;
+}
+
+.py-5 {
+  padding-block: 8rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 4rem;
+}
+
+.m-4 {
+  margin: 6rem;
+}
+
+.m-5 {
+  margin: 8rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 6rem;
+}
+
+.mt-5 {
+  margin-top: 8rem;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-3 {
+  margin-right: 4rem;
+}
+
+.mr-4 {
+  margin-right: 6rem;
+}
+
+.mr-5 {
+  margin-right: 8rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 6rem;
+}
+
+.mb-5 {
+  margin-bottom: 8rem;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 4rem;
+}
+
+.ml-4 {
+  margin-left: 6rem;
+}
+
+.ml-5 {
+  margin-left: 8rem;
+}
+
+.mx-0 {
+  margin-inline: 0;
+}
+
+.mx-1 {
+  margin-inline: 1rem;
+}
+
+.mx-2 {
+  margin-inline: 2rem;
+}
+
+.mx-3 {
+  margin-inline: 4rem;
+}
+
+.mx-4 {
+  margin-inline: 6rem;
+}
+
+.mx-5 {
+  margin-inline: 8rem;
+}
+
+.my-0 {
+  margin-block: 0;
+}
+
+.my-1 {
+  margin-block: 1rem;
+}
+
+.my-2 {
+  margin-block: 2rem;
+}
+
+.my-3 {
+  margin-block: 4rem;
+}
+
+.my-4 {
+  margin-block: 6rem;
+}
+
+.my-5 {
+  margin-block: 8rem;
+}
+
+.o-10 {
+  opacity: 0.1;
+}
+
+.o-20 {
+  opacity: 0.2;
+}
+
+.o-30 {
+  opacity: 0.3;
+}
+
+.o-40 {
+  opacity: 0.4;
+}
+
+.o-50 {
+  opacity: 0.5;
+}
+
+.o-60 {
+  opacity: 0.6;
+}
+
+.o-70 {
+  opacity: 0.7;
+}
+
+.o-80 {
+  opacity: 0.8;
+}
+
+.o-90 {
+  opacity: 0.9;
+}
+
+.o-100 {
+  opacity: 1;
+}
+
+.br-0 {
+  border-radius: 0;
+}
+
+.br-xs {
+  border-radius: 4px;
+}
+
+.br-sm {
+  border-radius: 8px;
+}
+
+.br-md {
+  border-radius: 12px;
+}
+
+.br-lg {
+  border-radius: 16px;
+}
+
+.br-xl {
+  border-radius: 20px;
+}
+
+.br-xxl {
+  border-radius: 24px;
+}
+
+.br-full {
+  border-radius: 50%;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inblk {
+  display: inline-block;
+}
+
+.default-font {
+  font-family: Poppins;
+}
+
+.fs-xs {
+  font-size: 0.5rem;
+}
+
+.fs-sm {
+  font-size: 0.75rem;
+}
+
+.fs-md {
+  font-size: 1rem;
+}
+
+.fs-lg {
+  font-size: 1.5rem;
+}
+
+.fs-xl {
+  font-size: 2rem;
+}
+
+.fs-xxl {
+  font-size: 3rem;
+}
+
+.bg-dark0 {
+  background-color: hsl(231deg, 10%, 13%);
+}
+
+.fg-dark0 {
+  color: hsl(231deg, 10%, 13%);
+}
+
+.hover-fg-dark0:hover {
+  color: hsl(231deg, 10%, 13%);
+}
+
+.hover-bg-dark0:hover {
+  background-color: hsl(231deg, 10%, 13%);
+}
+
+.bg-dark1 {
+  background-color: hsl(231deg, 10%, 17%);
+}
+
+.fg-dark1 {
+  color: hsl(231deg, 10%, 17%);
+}
+
+.hover-fg-dark1:hover {
+  color: hsl(231deg, 10%, 17%);
+}
+
+.hover-bg-dark1:hover {
+  background-color: hsl(231deg, 10%, 17%);
+}
+
+.bg-dark2 {
+  background-color: hsl(231deg, 10%, 22%);
+}
+
+.fg-dark2 {
+  color: hsl(231deg, 10%, 22%);
+}
+
+.hover-fg-dark2:hover {
+  color: hsl(231deg, 10%, 22%);
+}
+
+.hover-bg-dark2:hover {
+  background-color: hsl(231deg, 10%, 22%);
+}
+
+.bg-grey0 {
+  background-color: hsl(231deg, 10%, 30%);
+}
+
+.fg-grey0 {
+  color: hsl(231deg, 10%, 30%);
+}
+
+.hover-fg-grey0:hover {
+  color: hsl(231deg, 10%, 30%);
+}
+
+.hover-bg-grey0:hover {
+  background-color: hsl(231deg, 10%, 30%);
+}
+
+.bg-grey1 {
+  background-color: hsl(231deg, 10%, 45%);
+}
+
+.fg-grey1 {
+  color: hsl(231deg, 10%, 45%);
+}
+
+.hover-fg-grey1:hover {
+  color: hsl(231deg, 10%, 45%);
+}
+
+.hover-bg-grey1:hover {
+  background-color: hsl(231deg, 10%, 45%);
+}
+
+.bg-grey2 {
+  background-color: hsl(231deg, 10%, 60%);
+}
+
+.fg-grey2 {
+  color: hsl(231deg, 10%, 60%);
+}
+
+.hover-fg-grey2:hover {
+  color: hsl(231deg, 10%, 60%);
+}
+
+.hover-bg-grey2:hover {
+  background-color: hsl(231deg, 10%, 60%);
+}
+
+.bg-light0 {
+  background-color: hsl(231deg, 10%, 77%);
+}
+
+.fg-light0 {
+  color: hsl(231deg, 10%, 77%);
+}
+
+.hover-fg-light0:hover {
+  color: hsl(231deg, 10%, 77%);
+}
+
+.hover-bg-light0:hover {
+  background-color: hsl(231deg, 10%, 77%);
+}
+
+.bg-light1 {
+  background-color: hsl(231deg, 10%, 84%);
+}
+
+.fg-light1 {
+  color: hsl(231deg, 10%, 84%);
+}
+
+.hover-fg-light1:hover {
+  color: hsl(231deg, 10%, 84%);
+}
+
+.hover-bg-light1:hover {
+  background-color: hsl(231deg, 10%, 84%);
+}
+
+.bg-light2 {
+  background-color: hsl(231deg, 10%, 91%);
+}
+
+.fg-light2 {
+  color: hsl(231deg, 10%, 91%);
+}
+
+.hover-fg-light2:hover {
+  color: hsl(231deg, 10%, 91%);
+}
+
+.hover-bg-light2:hover {
+  background-color: hsl(231deg, 10%, 91%);
+}
+
+.bg-rose {
+  background-color: hsl(343deg, 76%, 68%);
+}
+
+.fg-rose {
+  color: hsl(343deg, 76%, 68%);
+}
+
+.hover-fg-rose:hover {
+  color: hsl(343deg, 76%, 68%);
+}
+
+.hover-bg-rose:hover {
+  background-color: hsl(343deg, 76%, 68%);
+}
+
+.bg-magenta0 {
+  background-color: hsl(326deg, 100%, 74%);
+}
+
+.fg-magenta0 {
+  color: hsl(326deg, 100%, 74%);
+}
+
+.hover-fg-magenta0:hover {
+  color: hsl(326deg, 100%, 74%);
+}
+
+.hover-bg-magenta0:hover {
+  background-color: hsl(326deg, 100%, 74%);
+}
+
+.bg-magenta1 {
+  background-color: hsl(315deg, 88%, 77%);
+}
+
+.fg-magenta1 {
+  color: hsl(315deg, 88%, 77%);
+}
+
+.hover-fg-magenta1:hover {
+  color: hsl(315deg, 88%, 77%);
+}
+
+.hover-bg-magenta1:hover {
+  background-color: hsl(315deg, 88%, 77%);
+}
+
+.bg-purple0 {
+  background-color: hsl(265deg, 89%, 78%);
+}
+
+.fg-purple0 {
+  color: hsl(265deg, 89%, 78%);
+}
+
+.hover-fg-purple0:hover {
+  color: hsl(265deg, 89%, 78%);
+}
+
+.hover-bg-purple0:hover {
+  background-color: hsl(265deg, 89%, 78%);
+}
+
+.bg-purple1 {
+  background-color: hsl(267deg, 57%, 78%);
+}
+
+.fg-purple1 {
+  color: hsl(267deg, 57%, 78%);
+}
+
+.hover-fg-purple1:hover {
+  color: hsl(267deg, 57%, 78%);
+}
+
+.hover-bg-purple1:hover {
+  background-color: hsl(267deg, 57%, 78%);
+}
+
+.bg-blue0 {
+  background-color: hsl(216deg, 94%, 70%);
+}
+
+.fg-blue0 {
+  color: hsl(216deg, 94%, 70%);
+}
+
+.hover-fg-blue0:hover {
+  color: hsl(216deg, 94%, 70%);
+}
+
+.hover-bg-blue0:hover {
+  background-color: hsl(216deg, 94%, 70%);
+}
+
+.bg-blue1 {
+  background-color: hsl(206deg, 100%, 79%);
+}
+
+.fg-blue1 {
+  color: hsl(206deg, 100%, 79%);
+}
+
+.hover-fg-blue1:hover {
+  color: hsl(206deg, 100%, 79%);
+}
+
+.hover-bg-blue1:hover {
+  background-color: hsl(206deg, 100%, 79%);
+}
+
+.bg-cyan0 {
+  background-color: hsl(182deg, 78%, 66%);
+}
+
+.fg-cyan0 {
+  color: hsl(182deg, 78%, 66%);
+}
+
+.hover-fg-cyan0:hover {
+  color: hsl(182deg, 78%, 66%);
+}
+
+.hover-bg-cyan0:hover {
+  background-color: hsl(182deg, 78%, 66%);
+}
+
+.bg-cyan1 {
+  background-color: hsl(169deg, 97%, 77%);
+}
+
+.fg-cyan1 {
+  color: hsl(169deg, 97%, 77%);
+}
+
+.hover-fg-cyan1:hover {
+  color: hsl(169deg, 97%, 77%);
+}
+
+.hover-bg-cyan1:hover {
+  background-color: hsl(169deg, 97%, 77%);
+}
+
+.bg-green0 {
+  background-color: hsl(135deg, 94%, 65%);
+}
+
+.fg-green0 {
+  color: hsl(135deg, 94%, 65%);
+}
+
+.hover-fg-green0:hover {
+  color: hsl(135deg, 94%, 65%);
+}
+
+.hover-bg-green0:hover {
+  background-color: hsl(135deg, 94%, 65%);
+}
+
+.bg-green1 {
+  background-color: hsl(128deg, 92%, 75%);
+}
+
+.fg-green1 {
+  color: hsl(128deg, 92%, 75%);
+}
+
+.hover-fg-green1:hover {
+  color: hsl(128deg, 92%, 75%);
+}
+
+.hover-bg-green1:hover {
+  background-color: hsl(128deg, 92%, 75%);
+}
+
+.bg-yellow0 {
+  background-color: hsl(45deg, 100%, 70%);
+}
+
+.fg-yellow0 {
+  color: hsl(45deg, 100%, 70%);
+}
+
+.hover-fg-yellow0:hover {
+  color: hsl(45deg, 100%, 70%);
+}
+
+.hover-bg-yellow0:hover {
+  background-color: hsl(45deg, 100%, 70%);
+}
+
+.bg-yellow1 {
+  background-color: hsl(54deg, 88%, 84%);
+}
+
+.fg-yellow1 {
+  color: hsl(54deg, 88%, 84%);
+}
+
+.hover-fg-yellow1:hover {
+  color: hsl(54deg, 88%, 84%);
+}
+
+.hover-bg-yellow1:hover {
+  background-color: hsl(54deg, 88%, 84%);
+}
+
+.bg-orange0 {
+  background-color: hsl(27deg, 72%, 65%);
+}
+
+.fg-orange0 {
+  color: hsl(27deg, 72%, 65%);
+}
+
+.hover-fg-orange0:hover {
+  color: hsl(27deg, 72%, 65%);
+}
+
+.hover-bg-orange0:hover {
+  background-color: hsl(27deg, 72%, 65%);
+}
+
+.bg-orange1 {
+  background-color: hsl(24deg, 87%, 78%);
+}
+
+.fg-orange1 {
+  color: hsl(24deg, 87%, 78%);
+}
+
+.hover-fg-orange1:hover {
+  color: hsl(24deg, 87%, 78%);
+}
+
+.hover-bg-orange1:hover {
+  background-color: hsl(24deg, 87%, 78%);
+}
+
+.bg-red0 {
+  background-color: hsl(0deg, 100%, 67%);
+}
+
+.fg-red0 {
+  color: hsl(0deg, 100%, 67%);
+}
+
+.hover-fg-red0:hover {
+  color: hsl(0deg, 100%, 67%);
+}
+
+.hover-bg-red0:hover {
+  background-color: hsl(0deg, 100%, 67%);
+}
+
+.bg-red1 {
+  background-color: hsl(0deg, 79%, 75%);
+}
+
+.fg-red1 {
+  color: hsl(0deg, 79%, 75%);
+}
+
+.hover-fg-red1:hover {
+  color: hsl(0deg, 79%, 75%);
+}
+
+.hover-bg-red1:hover {
+  background-color: hsl(0deg, 79%, 75%);
+}
+
+.bg-pdf {
+  background-color: hsl(0deg, 66%, 26%);
+}
+
+.fg-pdf {
+  color: hsl(0deg, 66%, 26%);
+}
+
+.hover-fg-pdf:hover {
+  color: hsl(0deg, 66%, 26%);
+}
+
+.hover-bg-pdf:hover {
+  background-color: hsl(0deg, 66%, 26%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gap-0 > * {
+  padding: 0;
+}
+
+.gap-0 {
+  margin-inline: 0;
+}
+
+.gap-sm > * {
+  padding: 6px;
+}
+
+.gap-sm {
+  margin-inline: -6px;
+}
+
+.gap-md > * {
+  padding: 12px;
+}
+
+.gap-md {
+  margin-inline: -12px;
+}
+
+.gap-lg > * {
+  padding: 18px;
+}
+
+.gap-lg {
+  margin-inline: -18px;
+}
+
+.gap-xl > * {
+  padding: 24px;
+}
+
+.gap-xl {
+  margin-inline: -24px;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.align-flex-start {
+  align-items: flex-start;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+@media (min-width: 0) {
+  .col-1-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .col-1-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .col-1-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-1-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-1-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .col-1-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xxl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 0) {
+  .std-grid-layout {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .std-grid-layout > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .std-grid-layout {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .std-grid-layout > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .std-grid-layout {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .std-grid-layout > * {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+}
+.navbar, .navbar .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card {
+  display: block;
+  padding: 1rem;
+  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.1);
+}
+.card .card-title {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  padding-block: 1rem;
+  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.1);
+}
+.navbar .logo {
+  font-size: 1.5rem;
+}
