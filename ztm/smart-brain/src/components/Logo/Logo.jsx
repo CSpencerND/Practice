@@ -11,6 +11,8 @@ const Logo = () => {
                     width: 150,
                     /* backgroundColor: "darkgreen", */
                 }}
+                tiltMaxAngleX={30}
+                tiltMaxAngleY={30}
             >
                 <div className="Tilt-inner">
                     <h1>React Parallax Tilt 👀</h1>
