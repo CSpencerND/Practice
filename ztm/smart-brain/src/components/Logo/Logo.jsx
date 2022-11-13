@@ -1,5 +1,6 @@
 import Tilt from "react-parallax-tilt"
 import "./Logo.css"
+import brain from "./icons8-brain-96.png"
 
 const Logo = () => {
     return (
@@ -14,8 +15,12 @@ const Logo = () => {
                 tiltMaxAngleX={30}
                 tiltMaxAngleY={30}
             >
-                <div className="Tilt-inner">
-                    <h1>React Parallax Tilt 👀</h1>
+                <div className="Tilt-inner pa3">
+                    <img
+                        src={brain}
+                        alt="brain logo"
+                        style={{ paddingTop: "0.75rem" }}
+                    ></img>
                 </div>
             </Tilt>
         </div>
