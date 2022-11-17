@@ -62,7 +62,7 @@ const ParticleBG = (props) => {
                     default: "bounce",
                 },
                 random: false,
-                speed: 2,
+                speed: .25,
                 straight: false,
             },
             number: {
