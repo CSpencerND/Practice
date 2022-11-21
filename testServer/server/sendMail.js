@@ -33,6 +33,7 @@ const sendMail = async (name, company, email, phone, message) => {
         })
 
         const emailHTML = `
+            <p>This is a test</p>
             <p>${message}</p>
             <p>Phone: ${phone}</p>
             `
